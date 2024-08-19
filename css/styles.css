@@ -1,0 +1,102 @@
+:root {
+    --primary: #1b1b1b;
+    --secondary: #2d2d2d;
+    --ternary: rgb(146, 146, 146);
+    --quaternary: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: JetBrains Mono, monospace;
+    
+}
+
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    border: none;
+    background-color: var(--secondary);
+    border-radius: 0.5rem;
+}
+tr {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.row:hover {
+    background-color: var(--ternary);
+    overflow: hidden;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+th, td {
+    padding: 1rem;
+}
+
+body {
+    padding: 1rem;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    /* align-items: center; */
+    place-items: center;
+    background-color: var(--primary);
+    color: var(--quaternary);
+}
+
+div {
+    margin: 1rem 0;
+}
+
+.error {
+    color: red !important;
+}
+
+.input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: var(--secondary);
+    flex: 1;
+    color: var(--quaternary);
+}
+.input::placeholder {
+    color: var(--ternary);
+}
+.select {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: var(--secondary);
+    color: var(--quaternary);
+    flex: 1;
+} 
+
+
+button {
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 0.2rem;
+    color: var(--quaternary);
+    padding: 0.5rem 1rem;
+    flex: 1;
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--ternary);
+}
+button:active {
+    background-color: var(--primary);
+}
+
+.button-container, .select-container, .container {
+    width: 100%;
+    display: flex;
+}
+form {
+    margin-bottom: 2rem;
+}
